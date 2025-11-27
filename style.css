@@ -1,0 +1,47 @@
+/*Bas-Styling för zoo-projekt*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: rgb(240, 236, 236); /*Ljus bakgrundsfärg*/
+    text-align: center;/*Centrerar all text på sidan*/
+}
+
+/*Rubriker*/
+.title {
+    color: black;
+    margin-top: 40;
+}
+.subtitle {
+    color: gray;
+    margin-bottom: 20px;
+}
+/*Galleri för bilder (lägger bredvid varandra)*/
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /*Gör så att bilderna går till nästa rad om skärmen är för liten*/
+    gap: 20px; /*Avstånd mellan bilderna*/
+    margin-top: 20px;
+}
+.gallery img {
+    width: 200px;
+    margin: 10px; /*Avstånd mellan bilderna*/
+    border-radius: 10px;
+}
+/*Sektion att göra */
+.todo {
+    margin-top: 40px;
+}
+.todo-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /*Avstånd mellan ikonen och texten*/
+    margin: 10px;
+    
+}
+.todo-item p {
+    font-size: 18px;
+
+}
+    

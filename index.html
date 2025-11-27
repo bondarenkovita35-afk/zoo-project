@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Systementor Zoo</title>
+    <link rel="stylesheet" href="style.css"> <!--Kopplar HTML till CSS-->
+    <!--Google font for snyggare text-->
+    <link href="http://googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--Huvudrubrik-->
+    <h1 class="title">Systementor Zoo</h1>
+    <!--Underrubrik-->
+    <h2 class="subtitle">Alla våra fantastiska djur</h2>
+    <!--Djurbild ligger bredvid varandra med namn och beskrivning-->
+    <div class="gallery"><!--Container för alla djurbilder-->
+        <div class="item"><!--Enskild djurbild med namn och beskrivning-->
+            <img src="OIP (1).webp" alt="Hund">
+            <h3>Hund och Katt</h3>
+        </div>
+        <p> </p>
+        <div class="item">
+
+            <img src="roliga-bilder-djur-som-fyller-ar (1).jpg" alt="Hönor">
+            <h3>Hönor</h3>
+            <p> </p>
+        </div>
+        <div class="item">
+            <img src="OIP.webp" alt="Papegoja">
+            <h3>Papegoja</h3>
+            <p> </p>
+        </div>
+    </div>
+
+    <!--Sektion att Göra med ikoner och text-->
+    <div class="att göra">
+
+
+    </div>
+    <!--Sektion med rubriken(lekpark, restaraunder,djur)-->
+    <section class="lekpark">
+        <h3>Lekpark</h3>
+        <p>Vår lekpark är öppen från 10:00 till 18:00 varje dag. Här kan barnen klättra, gunga och ha kul!</p>
+
+    </section>
+    <section class="restauranger">
+        <h3>Restauranger</h3>
+        <p>Vi har flera restauranger som erbjuder allt från snabbmat till gourmetmåltider. Prova vår berömda
+            djungelburgare!</p>
+    </section>
+    <section class="djur">
+        <h3>Djur</h3>
+        <p>Upptäck våra fantastiska djur från hela världen, inklusive hund, katt, papegoja, hörnen och mycket mer!</p>
+    </section>
+    <!--FFormulär för nyhetsbrev-->
+    <form id="newsletter-form">
+        <h3>Anmäl dig till vårt nyhetsbrev</h3>
+        <input type="email" id="email" name="email" placeholder="Din e-postadress" required>
+        <button type="submit">Anmäl</button>
+    </form>
+    <!--Table med information om våra djur -->
+    <table id="animals-table">
+        <thead>
+            <tr>
+                <th>Djurnamn</th>
+                <th>Art</th>
+                <th>Ålder</th>
+                <th>Ursprungsland</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Roksi</td>
+                <td>Hund</td>
+                <td>5 år</td>
+                <td>Stockholm</td>
+            </tr>
+            <tr>
+                <td>Barsik</td>
+                <td>Katt</td>
+                <td>3 år</td>
+                <td>Indien</td>
+            </tr>
+            <tr>
+                <td>Gerry</td>
+                <td>Hörn</td>
+                <td>4 år</td>
+                <td>Sydafrika</td>
+            </tr>
+            <tr>
+                <td>Zara</td>
+                <td>Papegoja</td>
+                <td>6 år</td>
+                <td>Tanzania</td>
+            </tr>
+        </tbody>
+    </table>
+    <!--Länk till JavaScript-->
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
