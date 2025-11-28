@@ -31,37 +31,75 @@
         </div>
         <div class="item">
             <img src="OIP.webp" alt="Papegoja">
-            <h3>Papegoja</h3>
+            <h3>Papegojar</h3>
             <p> </p>
         </div>
     </div>
 
     <!--Sektion att Göra med ikoner och text-->
-    <div class="att göra">
+    <section class="att-göra"> <!--section för aktiviteten i parken-->
+        <h2>Att göra i parken</h2> <!--Rubrik enligt uppgiften-->
+        <div class="att-list">
+
+            <div class="att-item"> <!--En aktivitet-->
+                <img src="images/zooKarta (1).png" alt="Lekpark ikon">
+                <p>Lekpark för barnen</p>
+            </div>
+
+            <div class="att-item">
+                <img src="images/red-restaurant-design-white-107112880.webp" alt="Restaurang ikon">
+                <p>Restauranger för alla smaker</p>
+            </div>
+
+            <div class="att-item">
+                <img src="images/dogLogo.png" alt="Djur ikon">
+                <p>Fantastiska djur att upptäcka</p>
+            </div>
+    </section>
 
 
-    </div>
+
     <!--Sektion med rubriken(lekpark, restaraunder,djur)-->
     <section class="lekpark">
         <h3>Lekpark</h3>
         <p>Vår lekpark är öppen från 10:00 till 18:00 varje dag. Här kan barnen klättra, gunga och ha kul!</p>
-
     </section>
+
     <section class="restauranger">
         <h3>Restauranger</h3>
         <p>Vi har flera restauranger som erbjuder allt från snabbmat till gourmetmåltider. Prova vår berömda
             djungelburgare!</p>
     </section>
+
     <section class="djur">
         <h3>Djur</h3>
         <p>Upptäck våra fantastiska djur från hela världen, inklusive hund, katt, papegoja, hörnen och mycket mer!</p>
     </section>
-    <!--FFormulär för nyhetsbrev-->
-    <form id="newsletter-form">
-        <h3>Anmäl dig till vårt nyhetsbrev</h3>
-        <input type="email" id="email" name="email" placeholder="Din e-postadress" required>
-        <button type="submit">Anmäl</button>
-    </form>
+
+    <!--Section för nyhetsbrev-->
+    <section class="nyhetsbrev">
+        <h2>Prenumerera på vårt nyhetsbrev</h2>
+        <!--FFormulär för nyhetsbrev-->
+        <form id="nyhetsbrev-form">
+            <!--Förnamn-->
+            <label for="fornamn">Förnamn:</label>
+            <input type="text" id="fornamn" name="fornamn" required>
+            <!--Efternamn-->
+            <label for="efternamn">Efternamn:</label>
+            <input type="text" id="efternamn" name="efternamn" required>
+            <!--E-post-->
+            <label for="email">E-post:</label>
+            <input type="email" id="email" name="email" required>
+            <!--Ålder-->
+            <label for="alder">Ålder:</label>
+            <input type="number" id="alder" name="alder" min="0" max="120" required>
+            <!--Meddelande till användaren efter formulär skickats-->
+            <p id="form-meddelande"></p>
+            <!--Submit knapp-->
+            <button type="submit">Skicka</button>
+        </form>
+    </section>
+
     <!--Table med information om våra djur -->
     <table id="animals-table">
         <thead>
@@ -72,7 +110,11 @@
                 <th>Ursprungsland</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody id="animals-body">
+            <button id="sort-age">Sortera efter ålder</button>
+            <button id="filter-dog">Visa bara hundar</button>
+
+
             <tr>
                 <td>Roksi</td>
                 <td>Hund</td>
@@ -100,6 +142,7 @@
         </tbody>
     </table>
     <!--Länk till JavaScript-->
+
     <script src="script.js"></script>
 
 

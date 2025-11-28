@@ -29,19 +29,78 @@ body {
     border-radius: 10px;
 }
 /*Sektion att göra */
-.todo {
+.att-göra {
     margin-top: 40px;
+    text-align: center;
 }
-.todo-item {
+.att-göra .att-list {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px; /*Avstånd mellan ikonen och texten*/
-    margin: 10px;
+    gap: 40px; /*Avstånd mellan ikonen och texten*/
+    margin: 20px;
     
 }
-.todo-item p {
-    font-size: 18px;
+.att-göra .att-item  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+align-items: center;
+text-align: center;
+gap: 10px; /*Avstånd mellan ikonen och texten*/
+margin: 10px;
 
 }
+.att-göra .att-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    display: block;
+    margin: 0  auto 10px auto;
+}
+.att-göra .att-item p {
+    font-size: 18px;
+    margin-top: 0;
+}
+/* Sektion för nyhetsbrev */
+.nyhetsbrev {
+  margin-top: 40px;           /* Avstånd uppåt */
+  text-align: center;         /* Centrerar rubrik och text */
+}
+
+/* Själva formuläret */
+#nyhetsbrev-form {
+  max-width: 400px;           /* Maxbredd på formuläret */
+  margin: 0 auto;             /* Centrerar formuläret på sidan */
+  display: flex;              /* Gör så att vi kan stapla fält */
+  flex-direction: column;     /* Fält under varandra */
+  gap: 10px;                  /* Avstånd mellan fälten */
+}
+
+/* Etiketter */
+#nyhetsbrev-form label {
+  text-align: left;           /* Texten vänsterjusterad */
+}
+
+/* Inputfält */
+#nyhetsbrev-form input {
+  padding: 8px;               /* Lite luft i fälten */
+  border-radius: 4px;         /* Rundade hörn */
+  border: 1px solid #ccc;     /* Tunn ram */
+}
+
+/* Skicka-knapp */
+#nyhetsbrev-form button {
+  padding: 10px;              /* Storlek på knappen */
+  border: none;               /* Ingen kantlinje */
+  border-radius: 4px;         /* Rundade hörn */
+  cursor: pointer;            /* Muspekare som knapp */
+}
+
+/* Meddelande om fel eller lyckat skick */
+#form-meddelande {
+  min-height: 20px;           /* Plats för text */
+  font-weight: bold;          /* Tydlig text */
+}
+
     
